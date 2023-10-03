@@ -1,9 +1,9 @@
 from setuptools import setup, find_packages
 
-NAME = "FortiManager SDK NG"
-VERSION = '0.0.1'
+NAME = "pyfmgng"
+VERSION = '0.0.5'
 
-REQUIRES = (["requests"],)
+REQUIRES = (["requests", "urllib3"])
 
 setup(
     name=NAME,
@@ -12,7 +12,7 @@ setup(
     url="https://github.com/pertoft/pyfmg-ng",
     author="Per Abildgaard Toft",
     author_email="p@t1.dk",
-    packages=find_packages(include=["pyfmg"]),
+    packages=find_packages(include=["pyfmgng"]),
     include_package_data=True,
     python_requires=">=3.8",
     install_requires=REQUIRES,
